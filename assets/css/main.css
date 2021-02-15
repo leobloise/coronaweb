@@ -1,0 +1,58 @@
+.main_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_content section {
+    margin: 1rem;
+}
+
+.main_content .section_text {
+    padding: 1rem;
+}
+
+.main_content .section_text h1, .main_content .section_text  h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--color-important);
+    text-indent: 1rem;
+}
+
+.main_content .section_text p {
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    text-align: justify;
+    text-indent: 1rem;
+    color: #333333;
+}
+
+.main_content .section_text  h2 {
+    margin-top: 3rem;
+}
+
+.main_content .section_image img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main_content .section_text p span {
+    display: block;
+    font-size: 2rem;
+    text-align: unset;
+}
+
+.prevent_items {
+    margin-top: 3rem;
+}
+
+.prevent_items li {
+    font-size: 1.6rem;
+    list-style:symbols('U+261E');
+}
+
+.prevent_items li::before {
+    content: "☞";
+    font-size: 3rem;
+    color: red;
+}

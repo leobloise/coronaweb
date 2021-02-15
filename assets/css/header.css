@@ -1,0 +1,122 @@
+.header {
+    padding: 1.5rem;
+    margin: 0 0 50px;
+    background: #B6DDDD;
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_content .logo img {
+    width: 200px;
+    max-width: 20%;
+    vertical-align: middle;
+}
+
+.header_content .logo span {
+    font-size: 3rem;
+    margin-left: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+    color: var(--color-important);
+}
+
+.menu {
+    display: none;
+    align-items: center;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.menu ul li a {
+    color: var(--color-important);
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.menu ul li a:hover {
+    border-bottom: .5rem solid var(--color-important);
+}
+
+.burger  {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    min-width: 22px;
+    height: 3px;
+    background-color: var(--color-important);
+    align-self:center;
+}
+
+.burger::after, .burger::before{
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: var(--color-important);
+}
+
+.burger::after{ 
+    top: 5px;
+    width: 12px;
+    height: 3px;
+   
+}
+
+.burger::before {
+    bottom: 5px;
+    width: 22px;
+    height: 3px;
+}
+
+.show {
+    display: flex;
+    animation: fadeIn 1s;
+    transform: translate(0);
+}
+
+.closed {
+    animation: fadeOut 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translate(200%);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(200%);
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.close {
+    background: none;
+}
+
+.close::after {
+    width: 22px;
+    top: 0px;
+    transform:rotate(45deg);
+}
+.close::before {
+    bottom: 0px;
+    transform: rotate(-45deg);
+}

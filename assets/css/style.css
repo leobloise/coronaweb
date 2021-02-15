@@ -1,0 +1,10 @@
+:root {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    --color-important: #408080;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+}
