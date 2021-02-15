@@ -1,3 +1,7 @@
+.main_background {
+    transition: all .2s;
+}
+
 .main_content {
     display: flex;
     justify-content: space-between;
