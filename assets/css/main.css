@@ -34,6 +34,7 @@
     display: block;
     margin: 0 auto;
     width: 100%;
+    transition: all 1s;
 }
 
 .main_content .section_text p span {

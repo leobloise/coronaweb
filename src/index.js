@@ -1,3 +1,4 @@
+
 const span = document.querySelector('.burger')
 
 function closed(span, menu) {
