@@ -5,10 +5,8 @@
 .footer_content {
     text-align: center;
     height: 250px;
-    max-height: 5%;
-    
+    max-height: 5%;   
 }
-
 .footer_content img{
     height: 100%;
     max-height: 250px;
@@ -19,4 +17,20 @@
 .footer_content #divulgar {
     max-height: 100px;
     height: 100%;
+}
+
+@media (max-width: 600px)  {
+
+    .footer_content {
+        display: flex;
+        padding: 0 3rem;
+        align-items: center;
+    }
+
+    .footer_content img, .footer_content #divulgar {
+        max-height: unset;
+        height: unset;
+        width: 50%;
+    }
+
 }

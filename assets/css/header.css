@@ -78,7 +78,6 @@
 .show {
     display: flex;
     animation: fadeIn 1s;
-    transform: translate(0);
 }
 
 .closed {
@@ -87,20 +86,18 @@
 
 @keyframes fadeIn {
     from {
-        transform: translate(200%);
+       opacity: 0;
     }
     to {
-        transform: translate(0);
-    }
+        opacity: 1;    }
 }
 
 @keyframes fadeOut {
     from {
-        transform: translate(0);
-    }
-    to {
-        transform: translate(200%);
-    }
+        opacity: 1;
+     }
+     to {
+         opacity: 0;    }
 }
 
 .hide {
@@ -121,7 +118,7 @@
     transform: rotate(-45deg);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
 
     .header {
         transition: 1s;
@@ -148,4 +145,8 @@
         width: 100%;
     }
 
+    .menu ul li a:hover {
+        border-bottom: unset;
+        text-decoration: underline;
+    }
 }

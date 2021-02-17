@@ -9,7 +9,7 @@ function closed(span, menu) {
         setTimeout(() => { 
             menu.classList.remove('show')
             menu.classList.remove('closed')
-        }, 900)
+        }, 500)
 
         return true;
     }
