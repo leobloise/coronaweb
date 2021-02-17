@@ -120,3 +120,32 @@
     bottom: 0px;
     transform: rotate(-45deg);
 }
+
+@media (max-width: 400px) {
+
+    .header {
+        transition: 1s;
+    }
+    .header_content {
+        flex-direction: column;
+    }
+
+    .header_content .logo {
+        text-align: center;
+    }
+
+    .menu {
+        margin: 3rem auto;
+    }
+
+    .menu ul li {
+        text-align: center;
+        display: block;
+        margin: 0%;
+    }
+
+    .burger::after {
+        width: 100%;
+    }
+
+}
